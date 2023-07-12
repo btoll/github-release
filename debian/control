@@ -1,0 +1,16 @@
+Source: github-release
+Section: utils
+Priority: optional
+Maintainer: Benjamin Toll <ben@benjamintoll.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://benjamintoll.com
+#Vcs-Browser: https://salsa.debian.org/debian/github-release
+#Vcs-Git: https://salsa.debian.org/debian/github-release.git
+Rules-Requires-Root: no
+
+Package: github-release
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: CLI tool to manage GitHub releases
+ CLI tool to create and delete GitHub releases and release assets

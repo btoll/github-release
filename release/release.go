@@ -146,7 +146,7 @@ func (r *Release) GetLatestRelease() (int64, error) {
 }
 
 func (r *Release) PrintRelease(release github.RepositoryRelease) {
-	fmt.Println("[TAG]", *release.TagName)
+	fmt.Printf("[%s]\n", *release.TagName)
 	for _, asset := range release.Assets {
 		fmt.Printf("\t%s\n", *asset.Name)
 	}
